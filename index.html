@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Библиотеката</title>
+    <link rel="shortcut icon" href="/home/zori/Documents/html/logo.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <nav class="navbar navbar-custom navbar-fixed-top" id="navbar">
+       <div class="container-fluid">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html">Библиотеката</a>
+           </div>
+           <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="index.html">Начало</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"href="#">Категории <span class="caret"></span></a>
+                             <ul class="dropdown-menu">
+                                 <li><a href="#">Класика</a></li>
+                                 <li><a href="#">Фантастика и фентъзи</a></li>
+                                 <li><a href="#">Хумор и афоризми</a></li>
+                                 <li><a href="#">Романи</a></li>
+                                 <li><a href="#">Трилъри</a></li>
+                                 <li><a href="#">Поезия и драматургия</a></li>
+                                 <li><a href="#">Политика и философия</a></li>
+                                 <li><a href="#">Детска литература</a></li>
+                                 <li><a href="#">Други</a></li>
+                             </ul>
+                        </li>
+                        <li><a href="#">За нас</a></li>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Блог</a></li>
+                </ul>   
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#logInSignIn"><span class="glyphicon glyphicon-user"> Вход/Регистрация</span></a>
+                </ul>              
+           </div>         
+       </div>
+   </nav>
+
+   <div id="logInSignIn" class="modal fade" role="dialog">
+       <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="modal-header" id="modalHeader">                   
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p>Вход</p>                  
+               </div>
+               <div class="modal-body">                
+                   <form action="#">                        
+                       <div class="form-group">
+                           <label for="email">Имейл адрес:</label>
+                           <input type="email" class="form-control" id="email">
+                       </div>
+                       <div class="form-group">
+                           <label for="pwd">Парола:</label>
+                           <input type="password" class="form-control" id="pwd">
+                       </div>
+                       <div class="chekbox">
+                          <label><input type="checkbox">  Запомни ме</label>
+                        </div>
+                        <button type="submit" class="btn btn-default" id="btnLogIn">Впиши ме</button>
+                   </form>                 
+                </div>           
+                <div class="modal-footer">
+                   <p>Влизайки в профила си приемам <a href="#">общите условия</a> на сайта.</p>
+                   <h4>За регистрация натиснете <a href="#">тук</a>.</h4>
+                </div>
+           </div>
+       </div>
+   </div> 
+
+   <div id="content">
+       <img id="imgBook" class="img-responsive" src="book3.jpg"  alt="Book">
+       <div class="container">
+            <div class="jumbotron">
+        </div>
+   </div>
+
+   <div>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+       <p>текст текст текст ямванотдусетомвьяантоьдсяеокьтямваогздуеи</p>
+   </div>
+
+   <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="title" id="titleFooter">Библиотеката</h3>
+                </div>
+                <div class="col-md-4">
+                    <ul id="ulFooter">
+                        <li><a href="#" id="aFooter">Контакти</a></li>
+                        <li><a href="#" id="aFooter">Общи условия</a></li>
+                        <li><a href="#" id="aFooter">Как работи</a></li>
+                        <li><a href="#" id="aFooter">Сигурна доставка</a></li>
+                        <li><a href="#" id="aFooter">Съвети за безопасност</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5><a href="#" id="aFooter">Харесайте страницата ни във Фейсбук.</a></h5>    
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
