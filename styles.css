@@ -1,14 +1,15 @@
 .navbar-custom {
+    position: absolute;
     background-color: #882223;
     color: white;
     border-radius:0;
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar-custom .navbar-nav > li > a{
     color: white;
 }
 
-.navbar-custom .navbar-nav > .active > a {
+.navbar-custom .navbar-nav > .active > a{
     color: white;
     background-color:transparent;
 }
@@ -17,29 +18,49 @@
 .navbar-custom .navbar-nav > li > a:focus,
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus,
-.navbar-custom .navbar-nav > .open >a {
+.navbar-custom .navbar-nav > .open >a{
     text-decoration: none;
     background-color: #581c19;
 }
 
-.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand{
     color: white;
 }
-.navbar-custom .navbar-toggle {
-    background-color: #581c19;
-}
-.navbar-custom .icon-bar {
-    background-color: #581c19;
-}
-.navbar-custom .navbar-nav .dropdown-menu  { 
-    background-color: #882223;
-  }
-  .navbar-custom .navbar-nav .dropdown-menu>li>a  { 
-    color: white;
-  }
 
-  .navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus  { 
+.navbar-custom .navbar-toggle{
+    background-color: white;
+}
+
+.navbar-custom .icon-bar{
+    background-color: #581c19;
+}
+
+.navbar-custom .navbar-nav .dropdown-menu{ 
+    background-color: #882223;
+}
+
+.navbar-custom .navbar-nav .dropdown-menu>li>a{ 
+    color: white;
+}
+
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus{ 
     color: #882223;
+}
+
+.add-on .input-group-btn > .btn{
+    border-left-width:0;left:-2px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.add-on .form-control:focus {
+   box-shadow: none;
+   -webkit-box-shadow:none; 
+   border-color:#cccccc; 
+}
+
+.navbar-nav:last-child{ 
+    border-right:0
 }
 
 #modalHeader{
@@ -53,21 +74,76 @@
 #btnLogIn{
     background-color: #882223;
     color: white;
+    position: relative;
+    left: 40%;    
+}
+
+#btnClose{
+    color: white;
+}
+
+#modalFooter{
+    background-color: #882223;    
+}
+
+#pModalFooter{
+    color: white;
+    text-align: center;
+}
+
+#h4ModalFooter{
+    color: white;
+    text-align: center;
+}
+
+#aModalFooter{
+    color: #a8797c;
 }
 
 #imgBook{
-    top: 250px;
+    position: relative;
+    top: 10px;
     left: 0;
     right: 0;
+    z-index: -1;
+}
+
+#jumbotronIndex{
+    position: absolute;
+    color:#882223;    
+    top: 70px;
+    right: 20px;
+    left:20px;
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+#textJumbotronIndex{
+    position: relative;
+    text-align: center;
+    font-style: italic;
+}
+
+#wellIndex{ 
+    position: relative;   
+    background-color: white;
+    border-color: #882223;
+    border: 5px solid;
+    top: 30px; 
+    bottom: 30px;
+    text-align: center;
+    color: #882223;    
 }
 
 #footer{
+    position: relative;
+    top:70px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color:#882223;
     color: white;
     text-align: center;
+    padding: 8px;
 }
 
 #ulFooter{
@@ -76,4 +152,180 @@
 #aFooter{
     text-decoration: none;
     color: white;  
+}
+
+#wellHeaderCategories{
+    position: relative;
+    top: 70px;
+    background-color: white;
+    border: 5px solid;
+    border-color: #882223;
+    text-align: center;
+    color: black;
+}
+
+#imageHeaderCategories{
+    position: relative;
+    max-block-size: 150px;
+}
+
+#genre{
+    font-style: italic;
+}
+
+#wellSurch{
+    position: relative;
+    background-color: #882223;
+    top: 70px;    
+}
+
+#wellAds{
+    position: relative;
+    background-color: white;
+    border: 5px solid;
+    border-color: #882223; 
+    color: #882223;
+    top: 70px;
+}
+
+#signUp, #generalTerms, #contactContent, #howWorksContainer{
+    position: relative;
+    top: 70px;
+}
+
+#signUpH1, #signUpH4{
+    text-align: center;
+}
+* {box-sizing: border-box}
+
+#signUpText, #signUpPass, #signUpTel{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+#signUpText:focus, #signUpPass:focus, #signUpTel:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+hr{
+    border: 1px solid #882223;
+    margin-bottom: 25px;
+}
+
+#signUpAgree{
+    text-align: center;
+}
+
+.signupbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.cancelbtn{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.cancelbtn, .signupbtn{
+    float: left;
+    width: 50%;
+}
+
+#generalTermsContainer, #contactContainer{
+    padding: 16px;
+    position: relative;
+    top: 70px;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
+
+#h4GeneralTerms, #h3GeneralTerms, #dataGeneralTerms{
+    text-align: center;
+}
+
+#textGeneralTerms{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#map{
+    position: relative;
+    width: 40%;
+    height: 300px;
+    margin-right: 5%;
+    margin-left: 15%;  
+    top: 5px;      
+    bottom: 30px;
+    float: left;
+}
+
+#pMaps{
+    position: relative;
+    width: 40%;
+    float: left;
+}
+
+#contactClearfix{
+    clear: both;
+}
+
+#subjectTextArea{
+    height: 200px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+#fname, #lname, #email, select, #subjectTextArea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#btnContSubmit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btnContSubmit:hover {
+    background-color: #45a049;
+}
+
+#textQuestionForm{
+    text-align: center;
 }
