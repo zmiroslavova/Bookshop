@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Библиотеката</title>
     <link rel="shortcut icon" href="/home/zori/Documents/html/bLogo.ico" />
@@ -9,146 +10,59 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-   <nav class="navbar navbar-custom navbar-fixed-top" id="navbar">
-       <div class="container-fluid">
-           <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-               </button>
-               <a class="navbar-brand" href="index.html">Библиотеката</a>
-           </div>
-           <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                        <li>
-                            <a href="index.html">Начало</a>
-                        </li>
-                        <li class="dropdown active">
-                            <a class="dropdown-toggle" data-toggle="dropdown"href="#">Категории <span class="caret"></span></a>
-                             <ul class="dropdown-menu">
-                                 <li><a href="catClassic.html">Класика</a></li>
-                                 <li><a href="catFiction.html">Фантастика и фентъзи</a></li>
-                                 <li><a href="catHumor.html">Хумор и афоризми</a></li>
-                                 <li><a href="catNovels.html">Романи</a></li>
-                                 <li><a href="catCriminals.html">Криминалета</a></li>
-                                 <li><a href="catDrama.html">Драма</a></li>
-                                 <li><a href="catChildren.html">Детска литература</a></li>
-                                 <li><a href="catOthers.html">Други</a></li>
-                             </ul>
-                        </li>
-                        <li><a href="#">За нас</a></li>
-                        <li><a href="#">Форум</a></li>
-                        <li><a href="#">Блог</a></li>
-                </ul>   
-                <ul class="nav navbar-nav navbar-right"> 
-                    <li>
-                        <form class="navbar-form" role="search">
-                            <div class="input-group add-on">
-                                <input class="form-control" placeholder="Търсене" name="srch-term" id="srch-term" type="text">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                    </div>
-                            </div>
-                        </form> 
-                    </li>                       
-                    <li><a href="#" data-toggle="modal" data-target="#logInSignUp"><span class="glyphicon glyphicon-user"> Вход/Регистрация</span></a>
-                </ul>              
-           </div>         
-       </div>       
-   </nav>
+    <div id="header"></div>
 
-   <div id="logInSignUp" class="modal fade" role="dialog">
-       <div class="modal-dialog">
-           <div class="modal-content">
-               <div class="modal-header" id="modalHeader">                   
-                    <button type="button" class="close" data-dismiss="modal" id="btnClose">&times;</button>
-                    <p>Вход</p>                  
-               </div>
-               <div class="modal-body">                
-                   <form action="#">                        
-                       <div class="form-group">
-                           <label for="email">Имейл адрес:</label>
-                           <input type="email" class="form-control" id="email">
-                       </div>
-                       <div class="form-group">
-                           <label for="pwd">Парола:</label>
-                           <input type="password" class="form-control" id="pwd">
-                       </div>
-                       <div class="chekbox">
-                          <label><input type="checkbox">  Запомни ме</label>
-                        </div>
-                        <button type="submit" class="btn btn-default" id="btnLogIn">Впиши ме</button>
-                   </form>                 
-                </div>           
-                <div class="modal-footer" id="modalFooter">
-                   <p id="pModalFooter">Влизайки в профила си приемам <a href="generalTerms.html" id="aModalFooter">общите условия</a> на сайта.</p>
-                   <h4 id="h4ModalFooter">За регистрация натиснете <a href="signUp.html" id="aModalFooter">тук</a>.</h4>
-                </div>
-           </div>
-       </div>
-   </div>
-   <div id="content">
-       <div class="well" id="wellHeaderCategories">           
+    <div id="content">
+
+        <div class="well" id="wellHeaderCategories">
             <div class="container-float">
                 <div class="row">
                     <div class="col-md-2">
-                        <img src="fiction.jpg" class="img-circle" alt="fiction" id="imageHeaderCategories">
+                        <img src="catFiction.jpg" class="img-circle" alt="fiction" id="imageHeaderCategories">
                     </div>
                     <div class="col-md-10">
                         <h1>Жанрове фантастика и фентъзи</h1>
                         <br>
-                        <h4 id="genre">"Заслужава! Да, съгласен съм. Мнозина сред живите заслужават смърт. 
-                            А някои сред мъртвите заслужават живот. 
+                        <h4 id="genre">"Заслужава! Да, съгласен съм. Мнозина сред живите заслужават смърт. А някои сред мъртвите заслужават
+                            живот.
                             <br> Можеш ли да им ги върнеш? Тогава не бързай да си играеш със смъртни присъди."
                         </h4>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="well" id="wellSurch">
             <form class="form" role="search">
                 <div class="input-group add-on">
                     <input class="form-control" placeholder="Търсене в категории фантастика и фентъзи" name="srch-term" id="srch-term" type="text">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
                 </div>
-            </form> 
+            </form>
         </div>
-        <div class="well" id="wellAds">          
-           
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
 
+        <div class="well" id="wellAds">
+            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
         </div>
     </div>
-    
-    <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="contacts.html" id="aFooter">Контакти</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="generalTerms.html" id="aFooter">Общи условия</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" id="aFooter">Как работи</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" id="aFooter">Сигурна доставка</a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" id="aFooter">Съвети за безопасност</a>
-                </div>              
-            </div>
-        </div>
-    </footer>  
+
+    <div id="footer"></div>
+
 </body>
-</html>  
+</html>

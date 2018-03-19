@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Библиотеката</title>
     <link rel="shortcut icon" href="/home/zori/Documents/html/bLogo.ico" />
@@ -9,49 +10,49 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-   <nav class="navbar navbar-custom navbar-fixed-top" id="navbar">
-       <div class="container-fluid">
-           <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                   <span class="icon-bar"></span>
-                   <span class="icon-bar"></span>
-    <div id="header"></div>
-            <div class="jumbotron" id="jumbotronIndex">
-                <div class="text" id="textJumbotronIndex">
-                    <h3>Тoзи сайт е за всички любители на книгите и за всички хора, които искат да четат повече, <br> но по-евтино!</h3>
-                    <h5>Библиотеката e сайт за безплатни обяви за книги. 
-                        Тук може да намериш интересни обяви и лесно да се свържеш с продавача. 
-                        Ако искаш да купиш някоя книга - може да намериш атрактивни предложения на цени, по-ниски, отколкото в магазина. 
-                        Ако искаш да продадеш някоя книга - можеш да добавиш обява бързо, лесно и безплатно.
-                        <br>Купувай и продавай в Библиотеката!
-                    </h5>                       
-                </div>
-            </div> 
-        </div>
+    <div id="container">
+        <div id="header"></div>
 
-   <footer id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="contacts.html" id="aFooter">Контакти</a>
+        <div id="content">
+            <div class="container">
+                <div class="jumbotron" id="jumbotronIndex">
+                    <div class="jumbotron" id="jumbotronIndexIn">
+                        <h3>
+                            Тoзи сайт е за всички любители на книгите и за всички хора, които искат да четат повече, но по-евтино!
+                        </h3>
+                        <h5>
+                            Библиотеката e сайт за безплатни обяви за книги. Тук може да намериш интересни обяви и лесно да се свържеш с продавача.
+                            <br> Ако искаш да купиш някоя книга - може да намериш атрактивни предложения на цени, по-ниски, отколкото
+                            в магазина.
+                            <br> Или искаш да продадеш някоя книга - можеш да добавиш обява бързо, лесно и безплатно.
+                            <br>Купувай и продавай в Библиотеката!
+                        </h5>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <a href="generalTerms.html" id="aFooter">Общи условия</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" id="aFooter">Как работи</a>
-                </div>
-                <div class="col-md-2">
-                    <a href="#" id="aFooter">Сигурна доставка</a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" id="aFooter">Съвети за безопасност</a>
-                </div>              
+            </div>
+            <div>
+                <p>asdfsadfsadfasdf</p>
+                <p>asdfsadfsadfasdf</p>
+                <p>asdfsadfsadfasdf</p>
+                <p>asdfsadfsadfasdf</p>
+                <p>asdfsadfsadfasdf</p>
+                <p>asdfsadfsadfasdf</p>
             </div>
         </div>
-    </footer>  
+
+        <div id="footer"></div>
+
+    </div>
+
 </body>
+
 </html>

@@ -1,6 +1,47 @@
-.navbar-custom {
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#container{
+    min-height:100%;
+    position: relative;
+}
+
+#header{
+    padding: 10px;
+}
+
+#content{
+    padding-bottom: 30px;
+}
+
+#footer{
     position: absolute;
-    background-color: #882223;
+    bottom: 0;
+    width: 100%;
+    background-color:#cc5f61;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+#ulFooter{
+    list-style-type: none;
+}
+
+#aFooter{
+    position: relative;
+    text-decoration: none;
+    color: white;  
+}
+
+/* header.html, class="navbar"*/
+.navbar-custom {
+    position: fixed;
+    background-color: #cc5f61;
     color: white;
     border-radius:0;
 }
@@ -20,7 +61,7 @@
 .navbar-custom .navbar-nav > .active > a:focus,
 .navbar-custom .navbar-nav > .open >a{
     text-decoration: none;
-    background-color: #581c19;
+    background-color: #b43c36;
 }
 
 .navbar-custom .navbar-brand{
@@ -32,19 +73,21 @@
 }
 
 .navbar-custom .icon-bar{
-    background-color: #581c19;
+    background-color: #b43c36;
 }
 
 .navbar-custom .navbar-nav .dropdown-menu{ 
-    background-color: #882223;
+    background-color: #cc5f61;
 }
 
 .navbar-custom .navbar-nav .dropdown-menu>li>a{ 
     color: white;
 }
 
-.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,.navbar-custom .navbar-nav .dropdown-menu>li>a:focus{ 
-    color: #882223;
+.navbar-custom .navbar-nav .dropdown-menu>li>a:hover,
+.navbar-custom .navbar-nav .dropdown-menu>li>a:focus{ 
+    color: white;
+    background-color: #b43c36;
 }
 
 .add-on .input-group-btn > .btn{
@@ -56,23 +99,25 @@
 .add-on .form-control:focus {
    box-shadow: none;
    -webkit-box-shadow:none; 
-   border-color:#cccccc; 
+   border-color:white; 
 }
 
 .navbar-nav:last-child{ 
     border-right:0
 }
 
+/* header.html id="logInSignIn"*/
 #modalHeader{
+    position: relative;
     text-align: center;
-    background-color: #882223;
+    background-color: #cc5f61;
     color: white;
     font-size: 25px;
     font-style: initial;
 }
 
 #btnLogIn{
-    background-color: #882223;
+    background-color: #cc5f61;
     color: white;
     position: relative;
     left: 40%;    
@@ -83,7 +128,7 @@
 }
 
 #modalFooter{
-    background-color: #882223;    
+    background-color: #cc5f61;    
 }
 
 #pModalFooter{
@@ -97,69 +142,56 @@
 }
 
 #aModalFooter{
-    color: #a8797c;
+    color: #cc5f61;
 }
 
-#imgBook{
+/*index.html*/
+#jumbotronIndex{    
     position: relative;
-    top: 10px;
-    left: 0;
-    right: 0;
-    z-index: -1;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-image: url(index_book.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 50px; 
+    
 }
 
-#jumbotronIndex{
-    position: absolute;
-    color:#882223;    
-    top: 70px;
-    right: 20px;
-    left:20px;
-    background-color: rgba(255, 255, 255, 0.40);
-}
-
-#textJumbotronIndex{
+#jumbotronIndexIn{
     position: relative;
+    background-color: rgba(235, 212, 212, 0.5);
+    color:  #882223;
     text-align: center;
     font-style: italic;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 40px;
+    
+    
 }
 
 #wellIndex{ 
     position: relative;   
     background-color: white;
-    border-color: #882223;
+    border-color: #cc5f61;
     border: 5px solid;
     top: 30px; 
     bottom: 30px;
     text-align: center;
-    color: #882223;    
+    color: #cc5f61;
+    
 }
 
-#footer{
-    position: relative;
-    top:70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color:#882223;
-    color: white;
-    text-align: center;
-    padding: 8px;
-}
 
-#ulFooter{
-    list-style-type: none;
-}
-#aFooter{
-    text-decoration: none;
-    color: white;  
-}
 
 #wellHeaderCategories{
     position: relative;
     top: 70px;
     background-color: white;
     border: 5px solid;
-    border-color: #882223;
+    border-color: #cc5f61;
     text-align: center;
     color: black;
 }
@@ -175,7 +207,7 @@
 
 #wellSurch{
     position: relative;
-    background-color: #882223;
+    background-color: #cc5f61;
     top: 70px;    
 }
 
@@ -183,8 +215,8 @@
     position: relative;
     background-color: white;
     border: 5px solid;
-    border-color: #882223; 
-    color: #882223;
+    border-color: #b43c36; 
+    color: #b43c36;
     top: 70px;
 }
 
@@ -213,7 +245,7 @@
 }
 
 hr{
-    border: 1px solid #882223;
+    border: 1px solid #b43c36;
     margin-bottom: 25px;
 }
 
@@ -222,7 +254,7 @@ hr{
 }
 
 .signupbtn{
-    background-color: #4CAF50;
+    background-color: #76b35e;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -233,7 +265,7 @@ hr{
 }
 
 .cancelbtn{
-    background-color: #f44336;
+    background-color: #c54f49;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -314,7 +346,7 @@ hr{
 }
 
 #btnContSubmit{
-    background-color: #4CAF50;
+    background-color: #76b35e;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -323,9 +355,18 @@ hr{
 }
 
 #btnContSubmit:hover {
-    background-color: #45a049;
+    background-color: #76b35e;
 }
 
 #textQuestionForm{
     text-align: center;
 }
+
+#imgHowWorks{
+    position: relative;
+    max-width:65%;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
