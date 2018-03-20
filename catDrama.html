@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Библиотеката</title>
     <link rel="shortcut icon" href="/home/zori/Documents/html/bLogo.ico" />
@@ -10,54 +11,44 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script>
-            $(function(){
-                $("#header").load("header.html");
-                $("#footer").load("footer.html");
-            });
-        </script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div id="header"></div>
+    <div id="container">
+        <div id="header"></div>
 
-   <div id="content">
+        <div id="content">
 
-       <div class="well" id="wellHeaderCategories">           
-            <div class="container-float">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img src="catDrama.jpg" class="img-circle" alt="drama" id="imageHeaderCategories">
-                    </div>
-                    <div class="col-md-10">
-                        <h1>Жанр драма</h1>
-                        <br>
-                        <h4 id="genre">"Да обичаш – това означава да бъдеш направен от сълзи и въздишки, 
-                            от пламък и вярност, докато станеш купчина пепел."</h4>
+            <div class="well" id="wellHeaderCategories">
+                <div class="container-float">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="catDrama.jpg" class="img-circle" alt="drama" id="imageHeaderCategories">
+                        </div>
+                        <div class="col-md-10">
+                            <h1>Жанр драма</h1>
+                            <br>
+                            <h4 id="genre">"Да обичаш – това означава да бъдеш направен от сълзи и въздишки, от пламък и вярност, докато
+                                станеш купчина пепел."</h4>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="well" id="wellAds">
+                <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+                <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+                <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+                <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
+            </div>
         </div>
 
-        <div class="well" id="wellSurch">
-            <form class="form" role="search">
-                <div class="input-group add-on">
-                    <input class="form-control" placeholder="Търсене в категория драма" name="srch-term" id="srch-term" type="text">
-                        <div class="input-group-btn">
-                            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                        </div>
-                </div>
-            </form> 
-        </div>
-
-        <div class="well" id="wellAds">  
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-            <p>asdfhwoieflksdkfjuwfjds;lkfh[wqiefkj;askdjfjcvhniufpao</p>
-        </div>
+        <div id="footer"></div>
     </div>
-    
-    <div id="footer"></div> 
-
 </body>
-</html>  
+</html>

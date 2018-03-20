@@ -15,7 +15,7 @@ body{
 }
 
 #content{
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 #footer{
@@ -168,29 +168,17 @@ body{
     margin-left: -5px;
     margin-right: -5px;
     margin-top: 40px;
-    
-    
 }
 
-#wellIndex{ 
-    position: relative;   
-    background-color: white;
-    border-color: #cc5f61;
-    border: 5px solid;
-    top: 30px; 
-    bottom: 30px;
-    text-align: center;
-    color: #cc5f61;
-    
-}
-
-
-
+/*all categories*/
 #wellHeaderCategories{
     position: relative;
-    top: 70px;
+    top: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     background-color: white;
-    border: 5px solid;
+    border: 2px solid;
     border-color: #cc5f61;
     text-align: center;
     color: black;
@@ -205,30 +193,29 @@ body{
     font-style: italic;
 }
 
-#wellSurch{
-    position: relative;
-    background-color: #cc5f61;
-    top: 70px;    
-}
-
 #wellAds{
     position: relative;
     background-color: white;
-    border: 5px solid;
-    border-color: #b43c36; 
-    color: #b43c36;
-    top: 70px;
+    border: 2px solid;
+    border-color: #cc5f61; 
+    color: black;
+    top: 60px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
 }
 
+/**/
 #signUp, #generalTerms, #contactContent, #howWorksContainer{
     position: relative;
-    top: 70px;
+    top: 50px;
 }
 
 #signUpH1, #signUpH4{
     text-align: center;
 }
-* {box-sizing: border-box}
 
 #signUpText, #signUpPass, #signUpTel{
     width: 100%;
@@ -333,7 +320,6 @@ hr{
     height: 200px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
 #fname, #lname, #email, select, #subjectTextArea {
     width: 100%;
     padding: 12px; 
