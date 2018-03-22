@@ -19,58 +19,61 @@
 </head>
 
 <body>
+    <div id="container">
+        <div id="header"></div>
 
-    <div id="header"></div>
+        <div id="content">
+            <div id="signUp">
+                <form action="#">
+                    <div class="container" id="signUpContainer">
+                        <h1 id="signUpH1">Регистрация</h1>
+                        <h4 id="signUpH4">Моля, попълнете регистрационната форма, за да създадете профил.</h4>
+                        <hr>
 
-    <div id="signUp">
-        <form action="#">
-            <div class="container">
-                <h1 id="signUpH1">Регистрация</h1>
-                <h4 id="signUpH4">Моля, попълнете регистрационната форма, за да създадете профил.</h4>
-                <hr>
+                        <label for="name">
+                            <b>Име и фамилия</b>
+                        </label>
+                        <input id="signUpText" type="text" placeholder="Въведете име и фамилия" name="name" required>
 
-                <label for="name">
-                    <b>Име и фамилия</b>
-                </label>
-                <input id="signUpText" type="text" placeholder="Въведете име и фамилия" name="name" required>
+                        <label for="email">
+                            <b>Имейл</b>
+                        </label>
+                        <input id="signUpText" type="text" placeholder="Въведете имейл" name="email" required>
 
-                <label for="email">
-                    <b>Имейл</b>
-                </label>
-                <input id="signUpText" type="text" placeholder="Въведете имейл" name="email" required>
+                        <label for="tel">
+                            <b>Телефонен номер</b>
+                        </label>
+                        <input id="signUpTel" type="tel" placeholder="Въведете телефонен номер" name="tel" required>
 
-                <label for="tel">
-                    <b>Телефонен номер</b>
-                </label>
-                <input id="signUpTel" type="tel" placeholder="Въведете телефонен номер" name="tel" required>
+                        <label for="psw">
+                            <b>Парола</b>
+                        </label>
+                        <input id="signUpPass" type="password" placeholder="Въведете парола" name="psw" required>
 
-                <label for="psw">
-                    <b>Парола</b>
-                </label>
-                <input id="signUpPass" type="password" placeholder="Въведете парола" name="psw" required>
+                        <label for="psw-repeat">
+                            <b>Повторете паролата</b>
+                        </label>
+                        <input id="signUpPass" type="password" placeholder="Повторете паролата" name="psw-repeat" required>
 
-                <label for="psw-repeat">
-                    <b>Повторете паролата</b>
-                </label>
-                <input id="signUpPass" type="password" placeholder="Повторете паролата" name="psw-repeat" required>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомни ме
+                        </label>
 
-                <label>
-                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомни ме
-                </label>
+                        <h4 id="signUpAgree">Със създаването на профила се съгласявам с
+                            <a href="generalTerms.html" style="color:dodgerblue">общите условия</a>.</h4>
+                        <br>
 
-                <h4 id="signUpAgree">Със създаването на профила се съгласявам с
-                    <a href="generalTerms.html" style="color:dodgerblue">общите условия</a>.</h4>
-                <br>
-
-                <div class="clearfix">
-                    <button type="button" class="cancelbtn">Отмени</button>
-                    <button type="submit" class="signupbtn">Регистрация</button>
-                </div>
+                        <div class="clearfix">
+                            <button type="button" class="cancelbtn">Отмени</button>
+                            <button type="submit" class="signupbtn">Регистрация</button>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div>
+
+        <div id="footer"></div>
     </div>
-
-    <div id="footer"></div>
-
 </body>
+
 </html>
