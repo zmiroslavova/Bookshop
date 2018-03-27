@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Библиотеката</title>
+    <link rel="shortcut icon" href="/home/zori/Documents/html/bLogo.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"></div>
+
+        <div id="content">
+            <div class="row" id="rowBlog">
+                <div class="leftcolumn">
+                    <div class="card">
+                        <a href="ArticleBear.html" id="aBlog">
+                            <h2>РУСКА ЗИМНА ПРИКАЗКА В „МЕЧОКЪТ И СЛАВЕЯТ“ </h2>
+                        </a>
+                        <h5 id="h5Blog">Да, тази зима в книжният пазар наистина се появиха страхотни издания. Вълнуващи и важни книги с впечатляващи
+                            оформления. Истинско изкушение. Едно от тях е романът „Мечокът и Славеят“ на американската писателка
+                            Катрин Арден. 06 Март, 2018</h5>
+                        <div>
+                            <a href="ArticleBear.html">
+                                <img src="sources/images/ArticleTitleBear.png" alt="BlagaDimitrova" class="img-responsive" id="blogImages">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <a href="ArticleObelisk.html" id="aBlog">
+                            <h2>РЕМАРК И „ЧЕРНИЯТ ОБЕЛИСК“ – РЕВЮ </h2>
+                        </a>
+                        <h5 id="h5Blog">
+                            Има едни книги, с които правим първите си срещи малко по задължение. Говоря за онези заглавия от списъците за лятното четене,
+                            допълнителната литература, която университетските преподаватели са така добри да ни предложат,
+                            книгите, с които да упражняваме езика, който учим. Често се съмняваме, че ще ни харесат, но пък
+                            обичаме онова приятно чувство, когато хванем такава книга и в края ѝ въздъхваме: “Точно от това
+                            имах нужда. 05 Март, 2018
+                        </h5>
+                        <div>
+                            <a href="ArticleObelisk.html">
+                                <img src="sources/images/ArticleTitleObelisk.png" alt="WinterBlizard" class="img-responsive" id="blogImages">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <div class="pagination">
+                            <a href="blogPageOne.html">&laquo;</a>
+                            <a href="blogPageOne.html">1</a>
+                            <a class="active" href="blogPageTwo.html">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="rightcolumn">
+                    <div class="card">
+                        <h3>Популярни публикации</h3>
+                        <a href="ArticleGirlDrankMoon.html" id="aBlog">
+                            <img src="sources/images/ArticleTitleGirl.png" class="img-rounded" alt="Girl" id="blogImagesRightColumn">
+                        </a>
+                        <br>
+                        <a href="ArticleDeadlyCold.html" id="aBlog">
+                            <img src="sources/images/ArticleTitleCold.png" class="img-rounded" alt="Girl" id="blogImagesRightColumn">
+                        </a>
+                        <br>
+                        <a href="ArticleBlagaDimitrova.html" id="aBlog">
+                            <img src="sources/images/ArticleTitleDimitrova.png" class="img-rounded" alt="Girl" id="blogImagesRightColumn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer"></div>
+
+        </div>
+</body>
+
+</html>
